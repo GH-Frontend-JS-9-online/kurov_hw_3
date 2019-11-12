@@ -34,6 +34,7 @@ a{
 	height: 10vh;
 	justify-content: space-between;
 	align-items: center;
+	min-height: 70px
 }
 
 .menu{
@@ -207,6 +208,54 @@ a{
 }
 
 .steven{
-	min-height: 350px;
+  min-height: 350px;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.steven-header{
+	display: flex;
+
+}
+
+.steven-logo{
+	margin-right: 2rem;
+}
+.steven-text{
+	font-size: 2rem;
+}
+
+.steven-text p{
+	font-size: 1.4rem;
+	color: #8d81ac;
+}
+
+.steven-slider{
+    font-size: 1.8rem;
+    text-align: center;
+    width: 60%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.steven-slider span{
+	color: #8d81ac;
+}
+
+.steven-slider p{
+	color: #8d81ac;
+}
+
+.steven-social{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-item{
+	display: flex;
+    flex-direction: column;
+}
