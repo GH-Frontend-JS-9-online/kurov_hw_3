@@ -239,6 +239,55 @@ a{
     width: 60%;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    display: flex;
+	justify-content: space-between;
+}
+.slides_container{
+	width: 100%;
+}
+
+#slides{
+		display: flex;
+	  position: relative;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+	  position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.controls{
+	border: aliceblue;
+	background-color: #fff;
+	font-size: 3rem;
+	color: darkgray;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.slider-item{
+	text-align: center;
+	width: 70%;
 }
 
 .steven-slider span{
@@ -257,5 +306,133 @@ a{
 
 .social-item{
 	display: flex;
-    flex-direction: column;
+  flex-direction: column;
+}
+
+.steven-social{
+	margin-bottom: 4rem;
+}
+
+.social-item {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+}
+
+.button-github{
+	background-color: rgb(243, 243, 243);
+	width: 240px;
+	height: 50px;
+	z-index: 218;
+	border: aliceblue;
+	border-radius: 5px;
+}
+
+.button-twitter{
+	background-color: #26a6d1;
+	width: 240px;
+	height: 50px;
+	z-index: 218;
+	border: aliceblue;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.button-facebook{
+	background-color: #3b5998;
+	width: 240px;
+	height: 50px;
+	z-index: 218;
+	border: aliceblue;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.people{
+	background: url(./img/bg-2.jpg) no-repeat center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.people-header{
+	font-size: 4rem;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	min-height: 15rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+.people-text{
+	min-height: 40rem;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.people-item{
+	width: 400px;
+}
+.fork{
+	background-color: #4a3b4e;
+	justify-content: space-between;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 600px;
+}
+
+.fork header{
+	font-size: 4rem;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+}
+
+.fork-content{
+	display: flex;
+	justify-content: space-around;
+}
+
+.fork-item{
+	width: 300px;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fork-item p{
+	font-size: 2rem;
+	font-family: "Montserrat";
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.item-head{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.059;
+  position: absolute;
+  z-index: 154;
+
+
+}
+
+.fork-item span{
+	
 }

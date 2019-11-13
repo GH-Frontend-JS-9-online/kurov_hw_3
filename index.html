@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
 
@@ -99,28 +100,57 @@
     <div class="steven-header">
         <div class="steven-logo"><img src="img/photo.png" alt="photo"></div> 
         <div class="steven-text"> Steven Strange
-        <p>@DoctorS</p> </div>
+         <p>@DoctorS</p></div>
     </div>     
     <div class="steven-slider">
-      <span>@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
-      <p>2 hours ago</p>
+      <div><button class="controls" id="previous">&lt;</button></div>
+      <div class="slides_container">
+      <ul id="slides">
+        <li class="slide showing">
+          <div class="slider-item">
+            <span>@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+            <p>20 hours ago</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slider-item">
+            <span>@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+            <p>30 hours ago</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slider-item">
+            <span>@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+            <p>10 hours ago</p>
+          </div>
+        </li>
+        <li class="slide">
+          <div class="slider-item">
+            <span>@Pixelbuddha</span> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+            <p>5 hours ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <div><button class="controls" id="next">&gt;</button></div>
     </div>
     <div class="steven-social">
       <div class="social-item">
-        <button><img src="img/github.png" alt="">GitHub</button>
-        <p>7 352 Followers</p>
+        <button class="button-github"><img src="img/github.png" alt="">GitHub</button>
+        7 352 Followers
       </div>
       <div class="social-item">
-        <button><img src="img/twitter.png" alt="">Twitter</button>
-        <p>136 312 Followers</p>
+        <button class="button-twitter"><img src="img/twitter.png" alt="">Twitter</button>
+        136 312 Followers
       </div>
       <div class="social-item">
-        <button><img src="img/fb.png" alt="">Facebook</button>
-        <p>218 092 Subscribers</p>
+        <button class="button-facebook"><img src="img/fb.png" alt="">Facebook</button>
+        218 092 Subscribers
       </div>
     </div>
           
   </section>
+
 
   <section class="people">
     <div class="people-header"><h2>People Are Talking About Fork</h2></div>
@@ -128,51 +158,30 @@
     <div class="people-text">
 
       <div class="people-item">
-        
+        <img src="img/smashing.png" alt="smashing">
+        <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
       </div>
       <div class="people-item">
-        
-      </div>
-      <div class="people-item">
-        
-      </div>
-      <div class="people-item">
-        
-      </div>
-      <div class="people-item">
-        
-      </div>
-      <div class="people-item">
-        
-      </div> 
-
-      <img src="img/smashing.png" alt="smashing">
-
-      <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-
-
-      <img src="img/codrops.png" alt="codrops">
-
+        <img src="img/codrops.png" alt="codrops">
       <p>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-
-
-      <img src="img/w.png" alt="codrops">
-
+      </div>
+      <div class="people-item">
+              <img src="img/w.png" alt="codrops">
       <p>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
-
-      <img src="img/pixel-buddha.png" alt="codrops">
-
+      </div>
+      <div class="people-item">
+              <img src="img/pixel-buddha.png" alt="codrops">
       <p>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
-
-      <img src="img/creativ-bloq.png" alt="codrops">
-
+      </div>
+      <div class="people-item">
+              <img src="img/creativ-bloq.png" alt="codrops">
       <p>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
-
-      <img src="img/tnw.png" alt="codrops">
-
+      </div>
+      <div class="people-item">
+              <img src="img/tnw.png" alt="codrops">
       <p>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
 
-
+      </div> 
     </div>  
 
 
@@ -180,56 +189,53 @@
   </section>
 
   <section class="fork">
+    <header><h2>Fork Subscription Pricing</h2></header>
+      <div class="fork-content">
+        <div class="fork-item">
+          <div class="item-head"><p> Students</p></div>
+        <span>$29</span>
+        per month
+        Personal License
 
-    <div class="fork-item">
-      
-    </div>
-    <div class="fork-item">
-      
-    </div>
-    <div class="fork-item">
-      
-    </div>
-    <div class="fork-item">
-      
-    </div>
-  
-    <h2>Fork Subscription Pricing</h2>
+        <button>purchase</button>
+        </div>
+        <div class="fork-item">
+          
+        professional
+        $59
+        per Month
+        Professional License
+        Email Support
+        <button>purchase</button>
+        </div>
+        <div class="fork-item">
+              agency
 
-    Students
-    $29
-    per month
-    Personal License
+        $99
+        per month
 
-    <button>purchase</button>
+        1-12 Team Members
+        Phone Support
+        <button>purchase</button>
+        </div>
+        <div class="fork-item">
+            enterprise
 
-    professional
-    $59
-    per Month
-    Professional License
-    Email Support
-    <button>purchase</button>
+        $159
+        per month
+        Unlimited Team Members
+          24/ 7 Phone Support
 
-    agency
+        <button>purchase</button>
+        </div>
+      </div>
+    
 
-    $99
-    per month
-
-    1-12 Team Members
-    Phone Support
-    <button>purchase</button>
+    <div class="fork-footer">
 
 
-    enterprise
 
-    $159
-    per month
-    Unlimited Team Members
-      24/ 7 Phone Support
-
-    <button>purchase</button>
-
-    Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </div>
   </section>
   
   <section class="subscribe">
@@ -340,6 +346,6 @@ Info
 Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.
 
 </footer>
-
+  <script src="./js.js"></script>
 </body>
 </html>
